@@ -1,6 +1,6 @@
 package search
 
-func Common(sneak, food [][]int) []int {
+func Simple(sneak, food [][]int) []int {
 
 	p1 := sneak[0]
 	p2 := food[0]
@@ -10,21 +10,21 @@ func Common(sneak, food [][]int) []int {
 
 	if x > 0 {
 		for i := 0; i < x; i++ {
-			step = append(step, MoveUp)
+			step = append(step, 0)
 		}
 	} else {
 		for i := 0; i < -x; i++ {
-			step = append(step, MoveDown)
+			step = append(step, 1)
 		}
 	}
 
 	if y > 0 {
 		for i := 0; i < y; i++ {
-			step = append(step, MoveLeft)
+			step = append(step, 2)
 		}
 	} else {
 		for i := 0; i < -y; i++ {
-			step = append(step, MoveRight)
+			step = append(step, 3)
 		}
 	}
 
