@@ -98,3 +98,10 @@ func (nn *NeuralNetwork) Predict(input []float64) int {
 	}
 	return max
 }
+
+// UpdateWeights Update 更新神经网络权重
+func (nn *NeuralNetwork) UpdateWeights(weights []float64) {
+	nn.weight[0] = weights[0:32]
+	nn.weight[1] = weights[32:52]
+	nn.weight[2] = weights[52:64]
+}
