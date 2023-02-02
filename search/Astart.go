@@ -2,6 +2,11 @@ package search
 
 import "fmt"
 
+const (
+	width  = 24
+	height = 32
+)
+
 type Node struct {
 	X int
 	Y int
