@@ -1,6 +1,6 @@
 package search
 
-func Greedy(sneak, food [][]int) []int {
+func Simple(sneak, food [][]int) []int {
 
 	p1 := sneak[0]
 	p2 := food[0]
