@@ -26,7 +26,7 @@ type Chromosome struct {
 func NewChromosome() *Chromosome {
 	var genes = make([]float64, 32*20+20*12+12*4)
 	for i := range genes {
-		genes[i] = rand.Float64() - 0.5
+		genes[i] = rand.Float64()*2 - 1
 	}
 	return &Chromosome{Genes: genes}
 }
